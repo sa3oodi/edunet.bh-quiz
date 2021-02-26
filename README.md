@@ -1,0 +1,22 @@
+<h1 align="center">edunet-exam-hack</h1>
+
+<div align="center">
+
+edunet-exam-hack Allows You To Get exam Answers from edunet
+
+
+
+</div>
+
+
+
+## Usage
+
+```js
+Open app.js file And Copy the script 
+After that Go to exam page, open the console
+paste it, You Will get The Answers 😉....
+```
+
+## Social Account
+* [instagram](https://www.instagram.com/oses/)
