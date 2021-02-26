@@ -35,9 +35,9 @@ async function edunet_quize(ID, Course_Id) {
         return res.json()
     }).catch(console.log)
 }
-var response_of_current_page = document.documentElement.innerHTML
-get_id_of_quize(response_of_current_page).then(quize_id => {
-        get_id_of_cource(response_of_current_page).then(cource_id => {
+var source_of_current_page = document.documentElement.innerHTML
+get_id_of_quize(source_of_current_page).then(quize_id => {
+        get_id_of_cource(source_of_current_page).then(cource_id => {
             edunet_quize(quize_id, cource_id).then(respon => {
                 respon.forEach(element => {
                     var choice = element['ChoicesList']
