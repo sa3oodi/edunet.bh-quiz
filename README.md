@@ -12,7 +12,7 @@ edunet-exam-hack Allows You To Get exam Answers from edunet
 
 ## Usage
 
-```js
+```
 Open app.js file And Copy the script 
 After that Go to exam page, open the console
 paste it, You Will get The Answers 😉....
