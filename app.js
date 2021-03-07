@@ -44,7 +44,7 @@ get_id_of_quize(source_of_current_page).then(quize_id => {
                     choice.forEach(ans => {
                         var is_correct = ans['Correct_Choice']
                         if (is_correct === true) {
-                            console.log(`Question : ${removeTags(element['Question_Text']) }\nAnswer : ${ans['ChoiceText']}`)
+                            alert(`Question : ${removeTags(element['Question_Text']) }\nAnswer : ${ans['ChoiceText']}\n\nQuiz cheat by S.SAEED (:`)
                         }
                     });
                 });
