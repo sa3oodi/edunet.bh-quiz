@@ -55,7 +55,7 @@ get_id_of_quize(source_of_current_page).then(quize_id => {
                             alert(`Question : ${removeTags(element['Question_Text'])}\nAnswer : ${ans['ChoiceText']}\n\nQuiz cheat by BDT (:`)
                         }
                     });
-                }else if(qtype === 3){
+                }else if(qtype === 1){
                     alert(`Question : ${removeTags(element['Question_Text'])}\nAnswer : ${removeTags(element['EssayAnswer'])}\n\nQuiz cheat by BDT (:`)
                 }
 
