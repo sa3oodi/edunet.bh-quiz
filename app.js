@@ -26,10 +26,6 @@ async function edunet_request(link) {
 }
 
 
-
-
-
-
 async function edunet_quize(ID, Course_Id) {
     return fetch('https://www.edunet.bh/Quiz/GetQuizQuestions', {
         method: 'POST',
@@ -55,8 +51,16 @@ get_id_of_quize(source_of_current_page).then(quize_id => {
                             alert(`Question : ${removeTags(element['Question_Text'])}\nAnswer : ${ans['ChoiceText']}\n\nQuiz cheat by BDT (:`)
                         }
                     });
-                }else if(qtype === 1){
+                } else if (qtype === 1) {
                     alert(`Question : ${removeTags(element['Question_Text'])}\nAnswer : ${removeTags(element['EssayAnswer'])}\n\nQuiz cheat by BDT (:`)
+                } else {
+                    var choice = element['ChoicesList']
+                    choice.forEach(ans => {
+                        var is_correct = ans['Correct_Choice']
+                        if (is_correct === true) {
+                            alert(`Question : ${removeTags(element['Question_Text'])}\nAnswer : ${ans['ChoiceText']}\n\nQuiz cheat by BDT (:`)
+                        }
+                    });
                 }
 
             });
