@@ -1,8 +1,8 @@
-<h1 align="center">edunet-exam-hack</h1>
+<h1 align="center">edunet-quiz-hack</h1>
 
 <div align="center">
 
-edunet-exam-hack Allows You To Get exam Answers from edunet
+edunet-exam-hack Allows You To Get quiz Answers from edunet
 
 
 
